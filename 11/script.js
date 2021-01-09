@@ -1,25 +1,20 @@
-var freshBtn = document.createElement("button");
-var freshBtnText = document.createTextNode("Press me baby");
-
-freshBtn.appendChild(freshBtnText);
-
 var docBody = document.body;
 
-docBody.append(freshBtn);
+var newInput = document.createElement("input");
 
-freshBtn.addEventListener("click", function () {
-  console.log("I LOVE YOU!");
+newInput.addEventListener("focus", function (e) {
+  console.log(e);
+  console.log("We are focusing");
 });
 
-var newlyMadeBtn = document.createElement("button");
-var newlyMadeBtnText = document.createTextNode("PRESS ME PLZ");
-
-newlyMadeBtn.appendChild(newlyMadeBtnText);
-
-newlyMadeBtn.addEventListener("mouseenter", function () {
-  console.log("YOU ARE IN THE TERRITORY OF THE NEWLY MADE BUTTON");
+newInput.addEventListener("blur", function (e) {
+  console.log(e);
+  console.log("we are blurring");
 });
 
-docBody.append(newlyMadeBtn);
+newInput.addEventListener("keydown", function (e) {
+  console.log(e);
+  console.log(e.key);
+});
 
-//turn document.body into a var
+docBody.append(newInput);
