@@ -1,15 +1,13 @@
-var docBody = document.body;
+var randomInput = document.createElement("input");
 
-var newInput = document.createElement("input");
-
-function eventCallback(e) {
+function reusableFn(e) {
   console.log(e);
 }
 
-newInput.addEventListener("focus", eventCallback);
+randomInput.addEventListener("focus", reusableFn);
 
-newInput.addEventListener("blur", eventCallback);
+randomInput.addEventListener("blur", reusableFn);
 
-newInput.addEventListener("keydown", eventCallback);
+randomInput.addEventListener("keypress", reusableFn);
 
-docBody.append(newInput);
+document.body.appendChild(randomInput);
