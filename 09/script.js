@@ -1,18 +1,13 @@
-var h1Node = document.createElement("H1")                // Create a <h1> element
-// var h1Text = document.createTextNode("Hello World");     // Create a text node
-// h1Node.appendChild(h1Text);     
+var pTag = document.createElement("p");
+var pTagTextNode = document.createTextNode("Hello I made an element");
+pTag.appendChild(pTagTextNode);
 
-var pNode = document.createElement('p');
-var pText = document.createTextNode("Hello i'm in a p tag, yay!");
-pNode.appendChild(pText);
+var h1Tag = document.createElement("h1");
+var h1TagTxtNode = document.createTextNode("Hey this is an H1");
 
-var docBody = document.body
+h1Tag.appendChild(h1TagTxtNode);
 
-// document.body.append(h1Node);
-// document.body.append(pNode);
+var docBody = document.body;
 
-docBody.append(h1Node);
-docBody.append(pNode);
-
-
-//turn document.body into a var
+docBody.append(h1Tag);
+docBody.append(pTag);
