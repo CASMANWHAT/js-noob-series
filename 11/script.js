@@ -1,20 +1,12 @@
-var docBody = document.body;
+var randomInput = document.createElement("input");
 
-var newInput = document.createElement("input");
-
-newInput.addEventListener("focus", function (e) {
-  console.log(e);
-  console.log("We are focusing");
+randomInput.addEventListener('focus', function(evt){
+    console.log(evt);
 });
 
-newInput.addEventListener("blur", function (e) {
-  console.log(e);
-  console.log("we are blurring");
-});
+randomInput.addEventListener('keypress', function(evt){
+    console.log(evt);
+    console.log(evt.key);
+})
 
-newInput.addEventListener("keydown", function (e) {
-  console.log(e);
-  console.log(e.key);
-});
-
-docBody.append(newInput);
+document.body.appendChild(randomInput)
