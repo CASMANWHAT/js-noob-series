@@ -1,12 +1,13 @@
-var randomInput = document.createElement("input");
+var input = document.createElement("input");
 
-randomInput.addEventListener('focus', function(evt){
-    console.log(evt);
+input.addEventListener("focus", function (event) {
+  console.log(event);
+  console.log("focusing");
 });
 
-randomInput.addEventListener('keypress', function(evt){
-    console.log(evt);
-    console.log(evt.key);
-})
+input.addEventListener("keypress", function (e) {
+  console.log(e.key);
+  console.log(e.keyCode);
+});
 
-document.body.appendChild(randomInput)
+document.body.append(input);
