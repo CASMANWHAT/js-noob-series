@@ -1,4 +1,9 @@
-//  document.body;
+setInterval(function () {
+  console.log("Hello");
+}, 1000);
+
+//2nd ex
+setInterval(moveElementRight, 400);
 
 var pTag = document.getElementById("helloPTag");
 
@@ -12,4 +17,11 @@ pTag.style.fontSize = "45px";
 
 var contentHolder = document.getElementById("contentHolder");
 contentHolder.style.position = "absolute";
-contentHolder.style.left = "255px";
+
+var pos = 0;
+
+function moveElementRight() {
+  pos += 10;
+
+  contentHolder.style.left = pos + "px";
+}
