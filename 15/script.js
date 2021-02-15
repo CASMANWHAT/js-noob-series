@@ -1,9 +1,9 @@
-setInterval(function () {
-  console.log("Hello");
-}, 1000);
+// setInterval(function () {
+//   console.log("Hello");
+// }, 1000);
 
 //2nd ex
-setInterval(moveElementRight, 10);
+// setInterval(moveElementRight, 10);
 
 var pTag = document.getElementById("helloPTag");
 
@@ -25,3 +25,15 @@ function moveElementRight() {
 
   contentHolder.style.left = pos + "px";
 }
+
+//3rd ex
+var btn = document.createElement("button");
+var txtNode = document.createTextNode("CLICK ME");
+btn.appendChild(txtNode);
+
+document.body.append(btn);
+
+btn.addEventListener("click", function () {
+  // alert("hI");
+  setInterval(moveElementRight, 10);
+});

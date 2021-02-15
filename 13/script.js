@@ -11,5 +11,5 @@ pTag.style.backgroundColor = "Yellow";
 pTag.style.fontSize = "45px";
 
 var contentHolder = document.getElementById("contentHolder");
-contentHolder.style.position = "absolute";
+contentHolder.style.position = "relative";
 contentHolder.style.left = "255px";
