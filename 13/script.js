@@ -1,15 +1,14 @@
-//  document.body;
+function clickedOut(e) {
+  console.log(e);
+  alert("Clicked out");
+}
 
-var pTag = document.getElementById("helloPTag");
+function clickedMiddle(e) {
+  console.log(e);
+  alert("Clicked middle");
+}
 
-console.log(pTag);
-
-pTag.innerHTML = "#noobgang#noobgang";
-pTag.style.color = "#000";
-pTag.style.border = "1px solid black";
-pTag.style.backgroundColor = "Yellow";
-pTag.style.fontSize = "45px";
-
-var contentHolder = document.getElementById("contentHolder");
-contentHolder.style.position = "relative";
-contentHolder.style.left = "255px";
+function clickedBottom(e) {
+  console.log(e);
+  alert("Clicked bottom");
+}
