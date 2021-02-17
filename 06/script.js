@@ -1,6 +1,8 @@
-var squareObj = {
-  borderColor: "green",
-  fillColor: "blue"
-}
+var circleObj = {
+  fill: "Red",
+  rolling: function () {
+    console.log("IM ROLLIN ROLLIN ROLLINNNNNNNNNNNNN");
+  },
+};
 
-console.log(squareObj.borderColor);
+circleObj.rolling();

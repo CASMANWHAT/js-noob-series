@@ -1,3 +1,6 @@
-function theyAreBlurring() {
-  // alert("OMG THEY ARE BLURRING!");
+var squareObj = {
+  borderColor: "green",
+  fillColor: "blue"
 }
+
+console.log(squareObj.borderColor);

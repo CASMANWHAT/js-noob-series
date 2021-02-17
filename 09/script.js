@@ -1,14 +1,19 @@
-var pTag = document.createElement("p");
-var pTxtNode = document.createTextNode("WE NEED SOME TXT!@!!!");
+var button = document.createElement("button");
+var btnTxtNode = document.createTextNode("PRESS ME");
+button.appendChild(btnTxtNode);
 
-pTag.appendChild(pTxtNode);
+button.addEventListener("click", function () {
+  console.log("YOU CLICKED ME!!!");
+});
 
-var h1Tag = document.createElement("h1");
-var h1TxtNode = document.createTextNode("THIS IS ONE EPIC TXT NODE!");
+var btn2 = document.createElement("button");
+var btntxt2 = document.createTextNode("BUTTON 2 BABY!!!!");
 
-h1Tag.appendChild(h1TxtNode);
+btn2.appendChild(btntxt2);
 
-var docBod = document.body;
+btn2.addEventListener("mouseover", function () {
+  console.log("YOU HOVERED OVER MOI");
+});
 
-docBod.append(pTag);
-docBod.append(h1Tag);
+document.body.append(button);
+document.body.append(btn2);

@@ -1,19 +1,13 @@
-var button = document.createElement("button");
-var btnTxtNode = document.createTextNode("PRESS ME");
-button.appendChild(btnTxtNode);
+var input = document.createElement("input");
 
-button.addEventListener("click", function () {
-  console.log("YOU CLICKED ME!!!");
+input.addEventListener("focus", function (event) {
+  console.log(event);
+  console.log("focusing");
 });
 
-var btn2 = document.createElement("button");
-var btntxt2 = document.createTextNode("BUTTON 2 BABY!!!!");
-
-btn2.appendChild(btntxt2);
-
-btn2.addEventListener("mouseover", function () {
-  console.log("YOU HOVERED OVER MOI");
+input.addEventListener("keypress", function (e) {
+  console.log(e.key);
+  console.log(e.keyCode);
 });
 
-document.body.append(button);
-document.body.append(btn2);
+document.body.append(input);

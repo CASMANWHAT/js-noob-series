@@ -1,8 +1,5 @@
-function pressMePlz() {
-  console.log("HELLO HI BONJOUR KUMUSTA");
-}
-
-
-function sayBye(){
-  console.log("BYE BYE BYEEEEE");
+function theyAreTyping(clack) {
+  console.log(clack.key);
+  console.log(clack)
+  // console.log("OMG THEY ARE TYPING!!!!!");
 }
