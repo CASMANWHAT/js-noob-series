@@ -1,27 +1,23 @@
-var docBody = document.body;
-
 var ulElement = document.getElementById("ulElement");
 
-var liElement = document.createElement("LI");
-var liTxtNode = document.createTextNode("I AM NOOB");
-
-liElement.appendChild(liTxtNode);
+var liElement = document.createElement("li");
+var liElementTxtNode = document.createTextNode("IM A NOOOOOOOB");
+liElement.appendChild(liElementTxtNode);
 
 ulElement.appendChild(liElement);
 
-var newBtn = document.createElement("button");
-var newBtnTxt = document.createTextNode("make a li dynamically");
+var btn = document.createElement("button");
+var btnTxtNode = document.createTextNode("PRESS ME");
 
-newBtn.appendChild(newBtnTxt);
+btn.appendChild(btnTxtNode);
 
-function liCreation(){
-  let x = document.createElement("li");
-  let textNode = document.createTextNode("dynamically created");
-  x.appendChild(textNode);
-  ulElement.appendChild(x);
+function liCreation() {
+  let li = document.createElement("li");
+  let txtNode = document.createTextNode("dynamically created LI ITEM");
+  li.appendChild(txtNode);
+  ulElement.appendChild(li);
 }
 
-newBtn.addEventListener("click", liCreation);
+btn.addEventListener("click", liCreation);
 
-docBody.append(ulElement);
-docBody.append(newBtn);
+document.body.append(btn);
