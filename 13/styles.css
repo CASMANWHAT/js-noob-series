@@ -1,0 +1,25 @@
+/* .top {
+  background: blue;
+  height: 60px;
+}
+.middle {
+  height: 40px;
+  background-color: red;
+}
+.bottom {
+  height: 20px;
+  background-color: orange;
+} */
+
+.top {
+  background: blue;
+  /* height: 60px; */
+}
+.middle {
+  /* height: 40px; */
+  background-color: red;
+}
+.bottom {
+  /* height: 20px; */
+  background-color: orange;
+}

@@ -9,6 +9,9 @@ function clickedMiddle(e) {
 }
 
 function clickedBottom(e) {
+
   console.log(e);
   alert("Clicked bottom");
+  e.stopPropagation();
+
 }
