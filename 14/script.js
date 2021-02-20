@@ -1,15 +1,9 @@
-//  document.body;
+var pTag = document.querySelector("#helloPTag");
 
-var pTag = document.getElementById("helloPTag");
-
-console.log(pTag);
-
-pTag.innerHTML = "#noobgang#noobgang";
-pTag.style.color = "#000";
-pTag.style.border = "1px solid black";
-pTag.style.backgroundColor = "Yellow";
+pTag.innerHTML = "#NOOBGANG";
+pTag.style.backgroundColor = "yellow";
+pTag.style.color = "pink";
 pTag.style.fontSize = "45px";
 
-var contentHolder = document.getElementById("contentHolder");
-contentHolder.style.position = "relative";
-contentHolder.style.left = "255px";
+pTag.style.position = "relative";
+pTag.style.left = "255px";
